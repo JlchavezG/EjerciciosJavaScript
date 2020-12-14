@@ -1,0 +1,36 @@
+<!-- crer una piramide con el numero de escalones dados por el usuario -->
+<!-- utilizando for en javascript -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Crear una piramide con ciclo for</title>
+  </head>
+  <body>
+     <script type="text/javascript">
+      // solicira el numero de escalones que dara el usuario
+      var numrep = prompt("Introduce el numero de escalones que tendra la piramide");
+      // validar si el dato obtenido es un numero
+      if(Number(numrep) == numrep){
+        //validar el tope de la piramide
+        if( numrep > 0 && numrep <= 80){
+          var rep, i;
+          // crear el ciclo for para la piramide i hasta 1
+          for(i = numrep; i >= 1; i--){
+          // crear el bucl interno para imprimir la piramide
+            for(rep = i; rep >= 1; rep--){
+              document.write(i);
+            }
+            document.write("<br>");
+          }
+        }
+        else{
+            alert("El valor  introducido no esta dentro de el rango ó es valor valido");
+        }
+      }
+      else{
+        alert("no es un valor numerico");
+      }
+     </script>
+  </body>
+</html>

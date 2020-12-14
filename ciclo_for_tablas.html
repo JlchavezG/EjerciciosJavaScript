@@ -1,0 +1,40 @@
+<!-- crear una tabla con el numero de filas y columnas de de el usuario -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>crear una tabla filas con ciclo for </title>
+</head>
+<body>
+   <script>
+     // declarar la variables a utilizar
+     var i, j;
+     // solicitar al usuario el numero de filas y columnas a travez de el teclado
+     var filas = Number(prompt("Introduce el numero de filas"));
+     var colum = Number(prompt("Introduce el numero de columnas"));
+     // multiplicar el numero de filas y de columnas
+     var res = filas * colum;
+     // imprimir la base de la tabla
+     document.write("<table border>");
+     // generar el bucle o ciclo de las filas
+     for (i = 0; i < filas; i++) {
+         // imprimirlas filas por lo tanto <tr>
+         document.write("<tr>");
+         // generar el ciclo de columna
+         for (j = 0; j < colum; j++) {
+          // imprimir a hora las columnas <td>
+          document.write("<td>");
+          // imprimir el valor total de res
+          document.write(res);
+          // restar 1 a res
+          res --;
+          // cerrar las columnas 
+          document.write("</td>");
+         }
+         // cerrar la filas
+         document.write("</tr>");
+     }
+     // cerrar la tabla
+     document.write("</table>");
+   </script>
+</body>
+</html>

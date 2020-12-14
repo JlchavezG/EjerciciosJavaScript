@@ -1,0 +1,37 @@
+<!-- comparar 3 numeros que de el usuario con JavaScript determinar cual es el mayor, menor o si son iguales-->
+<!-- imprimir en pantalla el resultado -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comparacion de 3 numeros con JavaScript</title>
+  </head>
+  <body>
+     <script>
+       // guardar los datos proporcionados por el usuario
+         var numero1 = prompt("Ingresa el primer numero a comparar: ");
+         var numero2 = prompt("Ingresa el segundo numero a comparar: ");
+         var numero3 = prompt("Ingresa el tercer numero a comparar: ");
+       // pasar los valores optenidos a enteros
+       numero1 = parseInt(numero1);
+       numero2 = parseInt(numero2);
+       numero3 = parseInt(numero3);
+       // empezar la comparacion de los numeros
+       if(numero1 == numero2 == numero3){
+         document.write("Numero 1 , Numero 2 y Numero 3 son iguales y valen: " +numero1+".");
+       }
+       else{
+          if(numero1 > numero2 && numero2 > numero3){
+              if(numero1 > numero3){
+                document.write("Numero 1 es mayor y vale: "+numero1+".");
+              } else{
+                document.write("Numero 3 es mayor y vale: "+numero3+".");
+              }
+          } else{
+            document.write("Numero 2 es mayor y vale: "+numero2+".");
+          }
+       }
+        document.write("</br></br> Numero 1 ="+numero1+"</br>"+"Numero 2 ="+numero2+"</br>"+"Numero 3 = "+numero3);
+     </script>
+  </body>
+</html>

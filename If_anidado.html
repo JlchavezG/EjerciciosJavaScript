@@ -1,0 +1,51 @@
+ <!-- recuperar una calificacion y determinar si es Recuersar el modulo, aprobatoria , reprobatoria sobresaliente -->
+<!-- utilizando if anidados y ciclo do while -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uso de if anidados con JavaScript y ciclo Do</title>
+  </head>
+  <body>
+       <script>
+              // generar el bucle para regresar una vez que aceptemos seguir
+              do{
+              // pedir la calificacion por medio de  el teclado y gardarla en una variable
+              var cal = prompt("Digita la calificacion a evaluar");
+              // validar si valor optenido es un numero
+              if(Number(cal) == cal){
+              // definir el rango de evaluacion este sera 0 a 10
+              if(cal > 0 && cal <=10){
+                    if(cal < 3){
+                      alert("Recursar el modulo");
+                    }
+                    else if(cal < 5){
+                      alert("Calificacion Reprobatoria");
+                    }
+                    else if(cal < 7){
+                      alert("Calificacion suficiente");
+                    }
+                    else if(cal < 8){
+                      alert("Calificacion competente");
+                    }
+                    else if(cal >= 9){
+                      alert("Calificacion sobresaliente");
+                    }
+              }
+             else{
+                   alert("No en una calificacion dentro de el rango de 0 - 10");
+             }
+          }
+          // si la calificacion no es un numero mandamos el mensaje
+          else{
+            // si el susuario no coloca un valor dentro de la caja de el prompt
+            if(cal != undefined){
+            alert("Introduce un valor numerico valido");
+            }
+          }
+        // el bucle de arriba se ejecuta mientras no se pulse la tecla cancelar
+        // si pulso la tecla cancelar termina el ciclo
+        } while(cal != undefined);
+       </script>
+  </body>
+</html>

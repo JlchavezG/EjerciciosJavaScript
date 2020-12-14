@@ -1,0 +1,37 @@
+<!-- realizar la suma de el numero de datos que te de el usuario usuando el ciclo do while -->
+<!-- utilizando el prompt el usuario nos indique cuando para la suma al momento de darle en cancelar -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Suma de numeros con ciclo while y operadores aritmeticos</title>
+  </head>
+  <body>
+    <script>
+      // declarar la variable en donde se guardara el valor de la suma
+      var suma = 0;
+      // generar el bucle para solicitar los numeros de la suma
+      do{
+        // solicitar el valor de los numeros a sumar
+        var numeros = prompt("Digita el numero o los numeros a sumar");
+        // comprobar si el dato que nos da el usuario es un numero
+        if(Number(numeros) == numeros){
+          // convertir cual numero en entero
+          numeros = Number(numeros);
+          // realizar la suma de los numeros datos por el usuario dentro de el ciclo
+          suma = suma + numeros;
+        }
+        // si el dato no es un numero
+        else{
+        // si el usuario pulsa aceptar si colocar un dato
+        if(numeros != undefined){
+          alert(numeros + "No es un valor numerico valido");
+         }
+        }
+        // se repitira el ciclo hasta que se pulse el boton cancelar
+      } while( numeros != undefined);
+      // imprimir el valor de la suma cuando termine el ciclo
+      document.write("La suma de los numeros ingresados es: "+suma);
+     </script>
+  </body>
+</html>

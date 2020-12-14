@@ -1,0 +1,38 @@
+<!-- determinar los multiplos de 4,9 y 5 utilizando ciclo for con javascript -->
+<!-- imprimir en pantalla la numeracion hasta el 500 y determinar los multiplos dados-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Determinar multiplos</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+       // imprimir un alinea horizontal para determinar donde inicia la numeracion
+       document.write("<hr>");
+       // declaramos las variables que utilizaremos
+       var i;
+       var j = 200;
+       var rep = 0;
+       // generamos el ciclo for de i hasta j
+       for(i = 1; i<= j; i++){
+         document.write(i);
+         // imprimir i la numeracion
+         // sacar el multiplo de 4
+         if(i % 4 == 0){
+           document.write("(Multiplo de 4)");
+         }
+         // sacar el multiplo de 9
+         if(i % 9 == 0){
+           document.write("(Multiplo de 9)");
+         }
+         // imprimir un salto de alinea
+         document.write("<br>");
+         // sacar el multiplo de 5
+         if(i % 5 == 0){
+           document.write("<hr>")
+         }
+       }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!-- recuperar la edad de un prompt y determinar si es mayor o menor de edad -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Uso de promp con JavaScript y sentencias de flujo</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="pedir();">Iniciar funcion para pedir datos</button>
+       <script type="text/javascript">
+         function pedir(){
+             var edad = prompt("Digita tu edad por favor");
+             if(Number(edad) == edad){
+               if(edad > 18){
+                 alert("Ya eres mayor de edad");
+               }
+               else{
+                 document.write('Aun no eres mayor de edad');
+               }
+             }
+             else{
+               alert("Digita un valor numerico valido");
+             }
+             }
+       </script>
+  </body>
+</html>
